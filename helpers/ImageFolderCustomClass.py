@@ -89,7 +89,7 @@ class ImageFolderCustomClass(data.Dataset):
     """
 
     def __init__(self, root, transform=None, target_transform=None,
-                 loader=default_loader, custom_class_to_idx=None):
+                 loader=default_loader, custom_class_to_idx=None) :
         if custom_class_to_idx is None:
             classes, class_to_idx = find_classes(root)
         else:

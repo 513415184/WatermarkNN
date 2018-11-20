@@ -91,7 +91,8 @@ def getwmloader(wm_path, batch_size, labels_path):
     transform_wm = _getdatatransformswm()
     # load watermark images
     wmloader = None
-    wmset = datasets.ImageFolder(
+
+    wmset = ImageFolderCustomClass(
         wm_path,
         transform_wm)
     img_nlbl = []
